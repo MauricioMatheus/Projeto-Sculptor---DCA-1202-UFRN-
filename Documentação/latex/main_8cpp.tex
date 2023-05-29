@@ -1,0 +1,64 @@
+\doxysection{Referência do Arquivo main.\+cpp}
+\hypertarget{main_8cpp}{}\label{main_8cpp}\index{main.cpp@{main.cpp}}
+{\ttfamily \#include \"{}Sculptor.\+hpp\"{}}\newline
+\doxysubsubsection*{Funções}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Funções}
+\Hypertarget{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4} 
+\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00004\ \{}
+\DoxyCodeLine{00005\ \ \ \ \ \mbox{\hyperlink{class_sculptor}{Sculptor}}\ model(100,100,100);\ \textcolor{comment}{//\ Tamanho\ do\ modelo}}
+\DoxyCodeLine{00006\ \ \ \ \ }
+\DoxyCodeLine{00007\ \ \ \ \ \textcolor{comment}{//\ Colocando\ Voxels\ em\ espaços\ estratégicos\ para\ medir\ as\ distâncias\ dos\ eixos\ com\ mais\ clareza}}
+\DoxyCodeLine{00008\ \ \ \ \ model.setColor(0,255,0,1);}
+\DoxyCodeLine{00009\ \ \ \ \ model.putVoxel(50,50,0);}
+\DoxyCodeLine{00010\ \ \ \ \ model.setColor(153,102,204,1);\ }
+\DoxyCodeLine{00011\ \ \ \ \ model.putVoxel(50,50,99);}
+\DoxyCodeLine{00012\ \ \ \ \ model.setColor(255,255,0,1);}
+\DoxyCodeLine{00013\ \ \ \ \ model.putVoxel(50,\ 99,\ 50);}
+\DoxyCodeLine{00014\ \ \ \ \ model.setColor(220,20,60,1);}
+\DoxyCodeLine{00015\ \ \ \ \ model.putVoxel(99,\ 50,\ 50);}
+\DoxyCodeLine{00016\ \ \ \ \ model.setColor(255,255,0,1);}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{comment}{//\ Criando\ o\ PacMan}}
+\DoxyCodeLine{00019\ \ \ \ \ model.putSphere(50,50,50,25);}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{comment}{//\ Retirando\ esferas\ para\ fazer\ os\ olhos}}
+\DoxyCodeLine{00022\ \ \ \ \ model.cutSphere(69,52,64,2);\ }
+\DoxyCodeLine{00023\ \ \ \ \ model.cutSphere(69,52,36,2);\ }
+\DoxyCodeLine{00024\ \ \ \ \ model.setColor(0,0,0,1);}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{comment}{//\ Colocando\ os\ olhos}}
+\DoxyCodeLine{00027\ \ \ \ \ model.putSphere(69,52,64,2);}
+\DoxyCodeLine{00028\ \ \ \ \ model.putSphere(69,52,36,2);}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{comment}{//\ Boca\ do\ PacMan}}
+\DoxyCodeLine{00031\ \ \ \ \ model.cutBox(50,60,20,65,20,99);}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{comment}{//\ Implementando\ pequenos\ alimentos\ para\ o\ PacMan}}
+\DoxyCodeLine{00034\ \ \ \ \ model.setColor(255,117,24,1);}
+\DoxyCodeLine{00035\ \ \ \ \ model.putBox(52,54,14,18,48,54);}
+\DoxyCodeLine{00036\ \ \ \ \ model.setColor(255,0,255,1);}
+\DoxyCodeLine{00037\ \ \ \ \ model.putEllipsoid(52,8,51,2,2,2);}
+\DoxyCodeLine{00038\ \ \ \ \ model.setColor(255,36,0,1);}
+\DoxyCodeLine{00039\ \ \ \ \ model.putSphere(52,1,51,2);}
+\DoxyCodeLine{00040\ \ \ \ \ }
+\DoxyCodeLine{00041\ \ \ \ \ model.cutVoxel(28,51,58);\ \textcolor{comment}{//\ Removendo\ um\ voxel\ aleatório}}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{comment}{//\ Criando\ o\ arquivo}}
+\DoxyCodeLine{00044\ \ \ \ \ model.writeOFF(\textcolor{stringliteral}{"{}model.off"{}});}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{00046\ \}}
+
+\end{DoxyCode}

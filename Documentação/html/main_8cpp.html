@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Documentação do projeto Sculptor: Referência do Arquivo main.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Documentação do projeto Sculptor<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Documentação gerada a partir da análise do código implementado.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrado</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funções</a>  </div>
+  <div class="headertitle"><div class="title">Referência do Arquivo main.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="_sculptor_8hpp_source.html">Sculptor.hpp</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
+<tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Funções</h2>
+<a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&#160;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">    4</span>{</div>
+<div class="line"><span class="lineno">    5</span>    <a class="code hl_class" href="class_sculptor.html">Sculptor</a> model(100,100,100); <span class="comment">// Tamanho do modelo</span></div>
+<div class="line"><span class="lineno">    6</span>    </div>
+<div class="line"><span class="lineno">    7</span>    <span class="comment">// Colocando Voxels em espaços estratégicos para medir as distâncias dos eixos com mais clareza</span></div>
+<div class="line"><span class="lineno">    8</span>    model.setColor(0,255,0,1);</div>
+<div class="line"><span class="lineno">    9</span>    model.putVoxel(50,50,0);</div>
+<div class="line"><span class="lineno">   10</span>    model.setColor(153,102,204,1); </div>
+<div class="line"><span class="lineno">   11</span>    model.putVoxel(50,50,99);</div>
+<div class="line"><span class="lineno">   12</span>    model.setColor(255,255,0,1);</div>
+<div class="line"><span class="lineno">   13</span>    model.putVoxel(50, 99, 50);</div>
+<div class="line"><span class="lineno">   14</span>    model.setColor(220,20,60,1);</div>
+<div class="line"><span class="lineno">   15</span>    model.putVoxel(99, 50, 50);</div>
+<div class="line"><span class="lineno">   16</span>    model.setColor(255,255,0,1);</div>
+<div class="line"><span class="lineno">   17</span> </div>
+<div class="line"><span class="lineno">   18</span>    <span class="comment">// Criando o PacMan</span></div>
+<div class="line"><span class="lineno">   19</span>    model.putSphere(50,50,50,25);</div>
+<div class="line"><span class="lineno">   20</span> </div>
+<div class="line"><span class="lineno">   21</span>    <span class="comment">// Retirando esferas para fazer os olhos</span></div>
+<div class="line"><span class="lineno">   22</span>    model.cutSphere(69,52,64,2); </div>
+<div class="line"><span class="lineno">   23</span>    model.cutSphere(69,52,36,2); </div>
+<div class="line"><span class="lineno">   24</span>    model.setColor(0,0,0,1);</div>
+<div class="line"><span class="lineno">   25</span> </div>
+<div class="line"><span class="lineno">   26</span>    <span class="comment">// Colocando os olhos</span></div>
+<div class="line"><span class="lineno">   27</span>    model.putSphere(69,52,64,2);</div>
+<div class="line"><span class="lineno">   28</span>    model.putSphere(69,52,36,2);</div>
+<div class="line"><span class="lineno">   29</span> </div>
+<div class="line"><span class="lineno">   30</span>    <span class="comment">// Boca do PacMan</span></div>
+<div class="line"><span class="lineno">   31</span>    model.cutBox(50,60,20,65,20,99);</div>
+<div class="line"><span class="lineno">   32</span> </div>
+<div class="line"><span class="lineno">   33</span>    <span class="comment">// Implementando pequenos alimentos para o PacMan</span></div>
+<div class="line"><span class="lineno">   34</span>    model.setColor(255,117,24,1);</div>
+<div class="line"><span class="lineno">   35</span>    model.putBox(52,54,14,18,48,54);</div>
+<div class="line"><span class="lineno">   36</span>    model.setColor(255,0,255,1);</div>
+<div class="line"><span class="lineno">   37</span>    model.putEllipsoid(52,8,51,2,2,2);</div>
+<div class="line"><span class="lineno">   38</span>    model.setColor(255,36,0,1);</div>
+<div class="line"><span class="lineno">   39</span>    model.putSphere(52,1,51,2);</div>
+<div class="line"><span class="lineno">   40</span>    </div>
+<div class="line"><span class="lineno">   41</span>    model.cutVoxel(28,51,58); <span class="comment">// Removendo um voxel aleatório</span></div>
+<div class="line"><span class="lineno">   42</span> </div>
+<div class="line"><span class="lineno">   43</span>    <span class="comment">// Criando o arquivo</span></div>
+<div class="line"><span class="lineno">   44</span>    model.writeOFF(<span class="stringliteral">&quot;model.off&quot;</span>);</div>
+<div class="line"><span class="lineno">   45</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">   46</span>}</div>
+<div class="ttc" id="aclass_sculptor_html"><div class="ttname"><a href="class_sculptor.html">Sculptor</a></div><div class="ttdef"><b>Definição</b> Sculptor.hpp:5</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+</small></address>
+</body>
+</html>
