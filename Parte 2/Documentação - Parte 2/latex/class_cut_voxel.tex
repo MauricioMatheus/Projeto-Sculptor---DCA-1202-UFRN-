@@ -1,0 +1,90 @@
+\doxysection{Referência da Classe Cut\+Voxel}
+\hypertarget{class_cut_voxel}{}\label{class_cut_voxel}\index{CutVoxel@{CutVoxel}}
+
+
+{\ttfamily \#include $<$cutvoxel.\+h$>$}
+
+Diagrama de hierarquia da classe Cut\+Voxel\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_cut_voxel}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Membros Públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_cut_voxel_a32d12f653ebb96da8c3aa62994692bad}{Cut\+Voxel}} (int \mbox{\hyperlink{class_figura_geometrica_ac7808b6b6074bf744ee597851651e9c5}{x}}, int \mbox{\hyperlink{class_figura_geometrica_ae5ddcf7439aa7274d7f818e49503402a}{y}}, int \mbox{\hyperlink{class_figura_geometrica_aa121633ded95c66066a32ba51a118fbb}{z}})
+\item 
+void \mbox{\hyperlink{class_cut_voxel_a72bb583540f93f6f5345db1499417716}{draw}} (\mbox{\hyperlink{class_sculptor}{Sculptor}} \&s)
+\end{DoxyCompactItemize}
+\doxysubsection*{Membros Públicos herdados de \mbox{\hyperlink{class_figura_geometrica}{Figura\+Geometrica}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_figura_geometrica_a81d7c7efaea511e60a15f5a363138dd9}{Figura\+Geometrica}} ()
+\item 
+\mbox{\hyperlink{class_figura_geometrica_ad13b9bccf1b14f6b9fbc662aad61ffd1}{\texorpdfstring{$\sim$}{\string~}\+Figura\+Geometrica}} ()
+\item 
+virtual void \mbox{\hyperlink{class_figura_geometrica_a140c20d043bc6bfb4952a367d8ed6c1c}{draw}} (\mbox{\hyperlink{class_sculptor}{Sculptor}} \&s)=0
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Outros membros herdados}
+\doxysubsection*{Atributos Protegidos herdados de \mbox{\hyperlink{class_figura_geometrica}{Figura\+Geometrica}}}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_figura_geometrica_ac7808b6b6074bf744ee597851651e9c5}{x}}
+\item 
+int \mbox{\hyperlink{class_figura_geometrica_ae5ddcf7439aa7274d7f818e49503402a}{y}}
+\item 
+int \mbox{\hyperlink{class_figura_geometrica_aa121633ded95c66066a32ba51a118fbb}{z}}
+\item 
+float \mbox{\hyperlink{class_figura_geometrica_a0a4f57efb1a6c525c8aeee34c92e7eab}{r}}
+\item 
+float \mbox{\hyperlink{class_figura_geometrica_a51930549bcb90d016b824f10f95df355}{g}}
+\item 
+float \mbox{\hyperlink{class_figura_geometrica_a25e5d6c21410103c25ec55c0117dac0d}{b}}
+\item 
+float \mbox{\hyperlink{class_figura_geometrica_ae7c8a027fcec3c357265b90458a4d165}{a}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Construtores e Destrutores}
+\Hypertarget{class_cut_voxel_a32d12f653ebb96da8c3aa62994692bad}\label{class_cut_voxel_a32d12f653ebb96da8c3aa62994692bad} 
+\index{CutVoxel@{CutVoxel}!CutVoxel@{CutVoxel}}
+\index{CutVoxel@{CutVoxel}!CutVoxel@{CutVoxel}}
+\doxysubsubsection{\texorpdfstring{CutVoxel()}{CutVoxel()}}
+{\footnotesize\ttfamily Cut\+Voxel\+::\+Cut\+Voxel (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{z }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00004\ \{}
+\DoxyCodeLine{00005\ \ \ \ \ this-\/>\mbox{\hyperlink{class_figura_geometrica_ac7808b6b6074bf744ee597851651e9c5}{x}}\ =\ \mbox{\hyperlink{class_figura_geometrica_ac7808b6b6074bf744ee597851651e9c5}{x}};}
+\DoxyCodeLine{00006\ \ \ \ \ this-\/>\mbox{\hyperlink{class_figura_geometrica_ae5ddcf7439aa7274d7f818e49503402a}{y}}\ =\ \mbox{\hyperlink{class_figura_geometrica_ae5ddcf7439aa7274d7f818e49503402a}{y}};}
+\DoxyCodeLine{00007\ \ \ \ \ this-\/>\mbox{\hyperlink{class_figura_geometrica_aa121633ded95c66066a32ba51a118fbb}{z}}\ =\ \mbox{\hyperlink{class_figura_geometrica_aa121633ded95c66066a32ba51a118fbb}{z}};}
+\DoxyCodeLine{00008\ \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentação das funções}
+\Hypertarget{class_cut_voxel_a72bb583540f93f6f5345db1499417716}\label{class_cut_voxel_a72bb583540f93f6f5345db1499417716} 
+\index{CutVoxel@{CutVoxel}!draw@{draw}}
+\index{draw@{draw}!CutVoxel@{CutVoxel}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Cut\+Voxel\+::draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sculptor}{Sculptor}} \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implementa \mbox{\hyperlink{class_figura_geometrica_a140c20d043bc6bfb4952a367d8ed6c1c}{Figura\+Geometrica}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00011\ \{}
+\DoxyCodeLine{00012\ \ \ \ \ s.\mbox{\hyperlink{class_sculptor_ad9d714a35fc8ae16d06eb5df37c3493c}{cutVoxel}}(\mbox{\hyperlink{class_figura_geometrica_ac7808b6b6074bf744ee597851651e9c5}{x}},\mbox{\hyperlink{class_figura_geometrica_ae5ddcf7439aa7274d7f818e49503402a}{y}},\mbox{\hyperlink{class_figura_geometrica_aa121633ded95c66066a32ba51a118fbb}{z}});}
+\DoxyCodeLine{00013\ \}}
+
+\end{DoxyCode}
+
+
+A documentação para essa classe foi gerada a partir dos seguintes arquivos\+:\begin{DoxyCompactItemize}
+\item 
+Projeto -\/ Parte 2/\mbox{\hyperlink{cutvoxel_8h}{cutvoxel.\+h}}\item 
+Projeto -\/ Parte 2/\mbox{\hyperlink{cutvoxel_8cpp}{cutvoxel.\+cpp}}\end{DoxyCompactItemize}

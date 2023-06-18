@@ -1,0 +1,28 @@
+\doxysection{interpreter.\+h}
+\hypertarget{interpreter_8h_source}{}\label{interpreter_8h_source}\index{Projeto -\/ Parte 2/interpreter.h@{Projeto -\/ Parte 2/interpreter.h}}
+\mbox{\hyperlink{interpreter_8h}{Ir para a documentação desse arquivo.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ INTERPRETER\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ INTERPRETER\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{figurageometrica_8h}{figurageometrica.h}}"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_interpreter}{Interpreter}}}
+\DoxyCodeLine{00008\ \{}
+\DoxyCodeLine{00009\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keywordtype}{int}\ dimX,\ dimY,\ dimZ;}
+\DoxyCodeLine{00011\ \ \ \ \ std::vector<FiguraGeometrica*>\ figs;}
+\DoxyCodeLine{00012\ \ \ \ \ std::vector<FiguraGeometrica*>::iterator\ itf;}
+\DoxyCodeLine{00013\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00014\ \ \ \ \ \mbox{\hyperlink{class_interpreter}{Interpreter}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *filename);}
+\DoxyCodeLine{00015\ \ \ \ \ \mbox{\hyperlink{class_interpreter_a0f96b57f8126e2b5bc63390121e4b5b1}{\string~Interpreter}}();}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_interpreter_abd362eafb8d400cdb5ce6f4780d4d99a}{draw}}(\mbox{\hyperlink{class_sculptor}{Sculptor}}\ \&s);}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_interpreter_ae11be08fbb352f4e78ac65384ab784a5}{getdimX}}();}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_interpreter_a3d7c172d5cdce1a4c79f9aeac569146e}{getdimY}}();}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_interpreter_ae3e3dc94c8641c37df1479bfa7ffde01}{getdimZ}}();}
+\DoxyCodeLine{00020\ \};}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ INTERPRETER\_H}}
+
+\end{DoxyCode}
